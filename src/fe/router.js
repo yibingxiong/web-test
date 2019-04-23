@@ -17,7 +17,7 @@ const Routers = {
         loading: Loading,
     }),
     '/404': Loadable({
-        loader: () => import(/* webpackChunkName: "index" */'./pages/404.jsx'),
+        loader: () => import(/* webpackChunkName: "404" */'./pages/404.jsx'),
         loading: Loading, 
     })
 }
