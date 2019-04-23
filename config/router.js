@@ -1,10 +1,17 @@
 /**
  * 后端路由
  */
-const routers = {
-    '/': 'index.html',
-    '/index': 'index.html',
-    '/home': 'index.html',
-}
+const routers = [
+    {
+        path: '/',
+        tpl: 'index.html',
+        title: '首页33'
+    },
+    {
+        path: '/index',
+        tpl: 'index.html',
+        title: '首页'
+    },
+]
 
 module.exports = routers;

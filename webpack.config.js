@@ -46,7 +46,9 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['../koa-test/static']),
         new HtmlWebpackPlugin({
-            template: path.join(wpath.FE, 'index.html')
+            template: path.join(wpath.FE, 'index.html'),
+            filename: path.join(wpath.SERVER, 'html', 'index.html'),
+
         }),
     ],
     optimization: {

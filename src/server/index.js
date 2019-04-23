@@ -9,13 +9,14 @@ const serverConf = require('../../config/server');
 
 app.use(express.static(path.join(wpath.ROOT, 'static')));
 
-// 模板路由
-for(let k of Object.keys(routerConf)) {
-    app.get(k,  (req, res) => {
-        const html = fs.readFileSync(path.join(htmlPath, routerConf[k]));
+
+for(let router of routerConf) {
+    app.get(router.path,  (req, res) => {
+        let html = fs.readFileSync(path.join(htmlPath, router.tpl || 'index.html'), 'utf8');
+        html = html.replace('#title#', router.title);
         res.append('Content-Type', 'text/html');
         res.end(html);
-    })
+    });
 }
 
 // 404
