@@ -5,7 +5,7 @@ const routers = [
     {
         path: '/',
         tpl: 'index.html',
-        title: '首页33'
+        title: '首页'
     },
     {
         path: '/index',
