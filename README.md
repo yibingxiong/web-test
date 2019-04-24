@@ -38,9 +38,9 @@ git clone https://github.com/yibingxiong/web-test your-project-name
 
 # 后面这个项目我也会拿来做实验
 # 如果你想要一个干净的版本,可以回退到1.0.0版
-# commitId为xxx(待补充)
+# commitId为1f90b217371ab4527d16b6df3bf5a2883924625f
 
-git reset --hard commitId
+git reset --hard 1f90b217371ab4527d16b6df3bf5a2883924625f
 ```
 
 ### 进项目装依赖包
