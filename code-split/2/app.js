@@ -111,3 +111,7 @@
     /***/ })
     
     /******/ });
+
+
+    __webpack_require__("./b.js");
+    console.log('1');

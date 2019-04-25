@@ -211,3 +211,8 @@
     /***/ })
     
     /******/ });
+    
+
+
+__webpack_require__.e(/*! import() */ 0).then(__webpack_require__.t.bind(null, /*! ./b.js */ "./b.js", 7));
+console.log('1');
