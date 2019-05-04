@@ -112,6 +112,25 @@
     
     /******/ });
 
+// eval中的代码
+__webpack_require__("./b.js");
+console.log('1');
 
-    __webpack_require__("./b.js");
-    console.log('1');
+
+// 自执行函数里边的参数
+{
+
+  "./b.js":
+  (function (module, exports, __webpack_require__) {
+
+    "use strict";
+    eval("\n\nconsole.log('b');\n\n//# sourceURL=webpack:///./b.js?");
+  }),
+
+    "./test2.js":
+  (function (module, exports, __webpack_require__) {
+
+    "use strict";
+    eval("\n\n__webpack_require__(/*! ./b.js */ \"./b.js\");\n\nconsole.log('1');\n\n//# sourceURL=webpack:///./test2.js?");
+  })
+}
